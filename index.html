@@ -66,6 +66,18 @@
     .banner-caption{margin:14px 0 0;color:var(--muted);text-align:center;font-size:.92rem;line-height:1.8}
     .cta-banner{display:block;width:100%;height:auto}
 
+    /* ===== 特典の中身リスト ===== */
+    .gift-section{padding:0 0 56px}
+    .gift-card{position:relative;padding:34px 26px 30px;border:1px solid #d8c9b3;border-radius:22px;background:var(--card);box-shadow:inset 0 0 0 6px var(--card),inset 0 0 0 7px #e3d6c3,0 16px 38px rgba(97,66,50,.1)}
+    .gift-lead{margin:0 0 6px;text-align:center;color:var(--terra);font-size:.85rem;font-weight:700;letter-spacing:.08em}
+    .gift-card h2{margin:0 0 18px;text-align:center;font-size:clamp(1.3rem,5vw,1.6rem)}
+    .gift-items{list-style:none;margin:0;padding:0}
+    .gift-items li{position:relative;padding:13px 0 13px 38px;border-bottom:1px dotted rgba(184,117,86,.55);font-weight:700;line-height:1.6}
+    .gift-items li:last-child{border-bottom:0}
+    .gift-items li:before{content:"✓";position:absolute;left:2px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:50%;background:var(--sage-pale);color:var(--sage-deep);display:grid;place-items:center;font-size:.85rem}
+    .gift-extra{margin:18px 0 0;padding:16px 18px;border-radius:14px;background:var(--terra-pale);text-align:left;font-size:.92rem;line-height:1.8;color:var(--ink)}
+    .gift-extra b{color:var(--terra)}
+
     /* ===== お礼＋自己紹介 ===== */
     .self-intro{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.52),rgba(255,255,255,0))}
     .intro-text{margin:0 auto 1.6em;color:var(--muted);text-align:left;max-width:560px;line-height:2}
@@ -211,6 +223,24 @@
         </a>
         <p class="banner-caption">LINEで合言葉【楽天】と送ってくださった方に<br>【Claudeにそのまま貼れる<br>楽天リサーチ指示文セット】を<br>プレゼントしています。<br>タップで受け取れます👆</p>
         <p class="banner-caption fine">もっとラクにしたい方向けの<br>応用編もご用意しています。</p>
+      </div>
+    </section>
+
+    <!-- ===== 特典の中身リスト ===== -->
+    <section class="gift-section">
+      <div class="wrap">
+        <div class="gift-card">
+          <p class="gift-lead">LINE登録で受け取れる</p>
+          <h2>5大特典を無料プレゼント</h2>
+          <ul class="gift-items">
+            <li>いま一番始めやすいAIマネタイズ手法</li>
+            <li>ChatGPT収益化プロンプト</li>
+            <li>AIマネタイズ神テンプレート</li>
+            <li>マネタイズのための生成AIツール</li>
+            <li>AI×SNSで収益を生むリアル事情</li>
+          </ul>
+          <p class="gift-extra"><b>さらに</b>、LINEで合言葉【楽天】を送ると<br>【Claudeにそのまま貼れる 楽天リサーチ指示文セット】もプレゼント！</p>
+        </div>
       </div>
     </section>
 
