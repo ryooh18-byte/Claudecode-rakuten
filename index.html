@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Claudeに任せる楽天アフィリエイト はじめの準備ガイド</title>
-  <meta name="description" content="商品探しから紹介文づくりまで、6ステップで準備が整います。Claudeに任せる楽天アフィリエイトのはじめの準備ガイドです。">
+  <meta name="description" content="商品探しから紹介文づくりまで、5ステップで準備が整います。Claudeに任せる楽天アフィリエイトのはじめの準備ガイドです。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
@@ -20,6 +20,10 @@
     html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
     body{margin:0;background:linear-gradient(90deg,rgba(61,81,72,.022) 1px,transparent 1px) 0 0/52px 52px,var(--paper);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.9;font-weight:500}
     a{color:inherit}
+    p,h1,h2,h3{word-break:auto-phrase}
+    .nb{display:inline-block}
+    p{text-wrap:pretty;line-break:strict}
+    h1,h2,h3,.hero-sub,.banner-caption{text-wrap:balance;line-break:strict}
     .wrap{width:min(760px,calc(100% - 34px));margin:auto}
     .wide{width:min(1120px,calc(100% - 48px));margin:auto}
     .eyebrow{font-size:.78rem;letter-spacing:.15em;font-weight:700;color:var(--sage-deep);text-transform:uppercase}
@@ -59,15 +63,17 @@
     .cta-banner-link{display:block;border-radius:20px;overflow:hidden;box-shadow:0 16px 38px rgba(97,66,50,.14);transition:.2s transform}
     .cta-banner-link:hover{transform:translateY(-2px)}
     .cta-banner-link:focus-visible{outline:3px solid #1a73e8;outline-offset:3px}
-    .banner-caption{margin:12px 0 0;color:var(--muted);text-align:center;font-size:.85rem}
+    .banner-caption{margin:14px 0 0;color:var(--muted);text-align:center;font-size:.92rem;line-height:1.8}
     .cta-banner{display:block;width:100%;height:auto}
 
     /* ===== お礼＋自己紹介 ===== */
     .self-intro{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.52),rgba(255,255,255,0))}
-    .intro-text{margin:0;color:var(--muted);text-align:center;max-width:560px;margin-inline:auto;line-height:1.95;white-space:pre-line}
+    .intro-text{margin:0 auto 1.6em;color:var(--muted);text-align:left;max-width:560px;line-height:2}
+    .intro-text:last-child{margin-bottom:0}
+    .intro-text.worries{padding:16px 20px;border-left:3px solid rgba(184,117,86,.55);background:#f6efe8;border-radius:0 12px 12px 0;color:var(--ink)}
 
     /* ===== このLPの概要 ===== */
-    .overview p{color:var(--muted);text-align:center;max-width:640px;margin:0 auto 22px;white-space:pre-line}
+    .overview p{color:var(--muted);text-align:left;max-width:560px;margin:0 auto 18px}
     .overview .check-list{max-width:460px;margin:0 auto}
 
     /* ===== ステップ形式 ===== */
@@ -78,6 +84,7 @@
     .step-label{display:inline-block;border-radius:999px;background:linear-gradient(135deg,var(--sage-deep),#586b61);color:#fff;padding:5px 16px;font-size:.79rem;font-weight:700;letter-spacing:.08em;box-shadow:0 6px 16px rgba(61,81,72,.15)}
     .step h3{font-size:1.55rem;margin:14px 0 10px}
     .step>p{color:var(--muted)}
+    .step>p+p{margin-top:1.1em}
     .step .illustration{display:block;width:100%;border-radius:18px;margin:18px 0;box-shadow:0 10px 26px rgba(61,55,45,.08)}
     .step .illustration-grid{display:grid;gap:14px;margin:18px 0}
     .illustration-caption{margin:-10px 0 0;color:var(--muted);text-align:center;font-size:.78rem}
@@ -189,8 +196,8 @@
         </a>
       </div>
       <div class="hero-title">
-        <h1>Claudeに任せる楽天アフィリエイト<br><em>はじめの準備ガイド</em></h1>
-        <p class="hero-sub">商品探しから紹介文づくりまで、6ステップで準備が整います</p>
+        <h1><span class="nb">Claudeに任せる</span><span class="nb">楽天アフィリエイト</span><br><em>はじめの準備ガイド</em></h1>
+        <p class="hero-sub">商品探しから紹介文づくりまで、<br>5ステップで準備が整います</p>
       </div>
     </div>
   </header>
@@ -202,23 +209,19 @@
         <a class="cta-banner-link" href="https://sub.aione.co.jp/line/open/QFSiLvkqYbDv?mtid=LjfkfFq0NU0O" target="_blank" rel="noopener noreferrer">
           <img class="cta-banner" src="./assets/free-gift-banner.png" alt="Claudeにそのまま貼れる 楽天リサーチ指示文セット">
         </a>
-        <p class="banner-caption">LINEで合言葉【楽天】と送ってくださった方に、【Claudeにそのまま貼れる 楽天リサーチ指示文セット】をプレゼントしています。<br>タップで受け取れます👆</p>
+        <p class="banner-caption">LINEで合言葉【楽天】と送ってくださった方に<br>【Claudeにそのまま貼れる<br>楽天リサーチ指示文セット】を<br>プレゼントしています。<br>タップで受け取れます👆</p>
       </div>
     </section>
 
     <!-- ===== 3. お礼＋自己紹介（ペルソナ）【固定】 ===== -->
     <section class="self-intro">
       <div class="wrap">
-        <p class="intro-text">こんにちは、くみです。
-「楽天アフィリエイトを始めてみたけれど、商品を探すだけで1日が終わってしまう」
-「紹介文が思いつかなくて、投稿が続かない」
-そんなお悩みはありませんか？
-このページでは、その時間のかかる作業をClaudeに手伝ってもらうための準備を、順番にまとめました。
-
-ページを開いてくださって、ありがとうございます。
-私は50代から、AIを使った発信と収益化に取り組んでいます。
-パソコンが得意だったわけではありません。介護や接客の仕事をしながら、「わからないことは一つずつ、正しく確かめる」を大切に続けてきました。
-このガイドも、私自身が実際に手を動かして確かめた手順だけを載せています。</p>
+        <p class="intro-text">こんにちは、くみです。<br>こんなお悩みはありませんか？</p>
+        <p class="intro-text worries">「楽天アフィリエイトを始めてみたけれど、商品を探すだけで1日が終わってしまう」<br>「紹介文が思いつかなくて、投稿が続かない」</p>
+        <p class="intro-text">このページでは、その時間のかかる作業をClaudeに手伝ってもらうための準備を、順番にまとめました。</p>
+        <p class="intro-text">ページを開いてくださって、ありがとうございます。<br>私は50代から、AIを使った発信と収益化に取り組んでいます。</p>
+        <p class="intro-text">パソコンが得意だったわけではありません。介護や接客の仕事をしながら、「わからないことは一つずつ、正しく確かめる」を大切に続けてきました。</p>
+        <p class="intro-text">このガイドも、できるだけ手間を減らして、誰でも迷わず進められる手順だけを載せています。</p>
       </div>
     </section>
 
@@ -229,64 +232,63 @@
           <p class="eyebrow">このガイドについて</p>
           <h2>楽天アフィリエイトとは</h2>
         </div>
-        <p>楽天アフィリエイトは、あなたの紹介リンクから誰かが楽天で買い物をすると、売上の一部が報酬として受け取れる仕組みです。
-そこに楽天が無料で公開している「楽天ウェブサービス」を組み合わせると、Claudeが楽天の商品情報を調べられるようになります。
-準備しておけば、Claudeにこんなことをお願いできます。</p>
+        <p>あなたの紹介リンクから誰かが楽天で買い物をすると、売上の一部が報酬として受け取れる仕組みです。登録は無料です。</p>
+        <p>準備しておけば、<br>Claudeにこんなことをお願いできます。</p>
         <ul class="check-list">
-          <li>条件に合う楽天の商品を探す</li>
-          <li>紹介する商品の候補を比べる</li>
+          <li>紹介したい商品の条件を整理する</li>
+          <li>集めた商品の候補を比べる</li>
           <li>ThreadsやInstagram用の紹介文を書く</li>
         </ul>
-        <p class="fine">※楽天のAPIは2026年2月に仕様が新しくなりました。このガイドは新しい仕様に合わせた手順です。</p>
       </div>
     </section>
 
-    <!-- ===== 5. 実際の説明（STEP形式） =====
-      台本の【画像:…】（STEP 2・3のスクショ）は未用意のため未掲載。用意でき次第 img.illustration で assets/ から追加する。
-    -->
+    <!-- ===== 5. 実際の説明（STEP形式） ===== -->
     <section class="steps" id="guide">
       <div class="wrap">
         <div class="section-head">
           <p class="eyebrow steps-kicker">STEPS</p>
-          <h2>6ステップで準備が整います</h2>
-          <p>商品探しから紹介文づくりまで、Claudeに任せるための準備です。</p>
+          <h2>5ステップで準備が整います</h2>
+          <p>商品探しから紹介文づくりまで、<br>Claudeに任せるための準備です。</p>
         </div>
 
         <article class="step" data-step="01">
           <span class="step-label">STEP 1</span>
           <h3>準備するのはこれだけ</h3>
-          <p>楽天会員のアカウントと、Claude（有料プランがおすすめ）があれば始められます。<br>楽天アフィリエイトも楽天ウェブサービスも無料です。</p>
+          <p>楽天会員のアカウントと、Claudeがあれば始められます。まずは無料プランでも大丈夫です。</p>
+          <p>楽天アフィリエイトも無料で使えます。</p>
         </article>
 
         <article class="step" data-step="02">
           <span class="step-label">STEP 2</span>
-          <h3>楽天アフィリエイトに登録する</h3>
-          <p>楽天アフィリエイトのページに楽天IDでログインして、利用登録をします。<br>登録すると「アフィリエイトID」が使えるようになります。あなたの紹介から売れたことを楽天に伝える“名札”です。</p>
+          <h3><span class="nb">楽天アフィリエイトに</span><span class="nb">登録する</span></h3>
+          <p>楽天アフィリエイトのページに楽天IDでログインして、利用登録をします。</p>
+          <p>次に、管理画面の「サイト管理」から、投稿に使うThreadsやInstagramのアカウントを登録します。</p>
+          <p>これで、あなたの紹介から売れたことが楽天に伝わるようになります。</p>
         </article>
 
         <article class="step" data-step="03">
           <span class="step-label">STEP 3</span>
-          <h3>「アプリID」と「アクセスキー」をもらう</h3>
-          <p>楽天ウェブサービスのサイトで「アプリID発行」を押し、アプリ名などを入力して登録します。<br>登録が終わると、画面に「アプリID」と「アクセスキー」が表示されます。Claudeが楽天の商品情報を見に行くための“合い鍵”です。</p>
+          <h3><span class="nb">紹介したい商品を選んで、</span><span class="nb">リンクを作る</span></h3>
+          <p>楽天市場で、紹介したい商品を2〜3個選びます。</p>
+          <p>楽天アフィリエイトの管理画面でその商品を探して、あなた専用の紹介リンクを作ります。</p>
+          <p>商品名・価格・レビューの数・特徴を、メモにコピーしておきましょう。</p>
         </article>
 
         <article class="step" data-step="04">
           <span class="step-label">STEP 4</span>
-          <h3>3つの情報を安全にメモする</h3>
-          <p>アフィリエイトID・アプリID・アクセスキーの3つを、自分だけが見られるメモに控えます。<br>この3つは、人に見せたりSNSに載せたりしないでくださいね。</p>
+          <h3><span class="nb">Claudeにお願いして、</span><span class="nb">紹介文を作る</span></h3>
+          <p>メモした商品の情報をClaudeに貼って、話しかけるだけです。</p>
+          <div class="rule">
+            <div><b>お願いの例</b><p>「この3つの商品を、50代女性向けのキッチン雑貨として比べて、いちばんおすすめの1つについて、Threads用の紹介文を書いて」</p></div>
+          </div>
+          <p>すぐに使える指示文は、LINE特典の【Claudeにそのまま貼れる 楽天リサーチ指示文セット】にまとめました。</p>
         </article>
 
         <article class="step" data-step="05">
           <span class="step-label">STEP 5</span>
-          <h3>Claudeにお願いする</h3>
-          <p>あとは話しかけるだけです。たとえば、<br>「50代女性向けのキッチン雑貨で、レビューが多い商品を5つ探して、Threads用の紹介文を書いて」<br>とお願いすると、商品探しから文章づくりまで一緒に進めてくれます。</p>
-          <p>すぐに使える指示文は、LINE特典の【Claudeにそのまま貼れる 楽天リサーチ指示文セット】にまとめました。</p>
-        </article>
-
-        <article class="step" data-step="06">
-          <span class="step-label">STEP 6</span>
-          <h3>投稿するときは「#PR」を忘れずに</h3>
-          <p>アフィリエイトリンクを載せる投稿には、広告だとわかるように「#PR」を付けます。<br>ルールを守った発信が、フォロワーさんからの信頼につながります。</p>
+          <h3><span class="nb">投稿するときは</span><span class="nb">「#PR」を忘れずに</span></h3>
+          <p>紹介リンクを載せる投稿には、広告だとわかるように「#PR」を付けます。</p>
+          <p>ルールを守った発信が、フォロワーさんからの信頼につながります。</p>
         </article>
       </div>
     </section>
@@ -345,8 +347,6 @@ AIを活用して副収入を得られるようになりました。</p>
             <img class="cta-banner" src="./assets/free-gift-banner.png" alt="Claudeにそのまま貼れる 楽天リサーチ指示文セット">
           </a>
           <p class="banner-caption">タップで受け取れます👆</p>
-          <p>AIで副収入を得ることに興味はあるけれど、何から始めればいいか分からない方へ。まずは一つずつ、一緒に進めてみませんか。</p>
-          <a class="button" href="https://sub.aione.co.jp/line/open/QFSiLvkqYbDv?mtid=LjfkfFq0NU0O" target="_blank" rel="noopener noreferrer">楽天リサーチ指示文セットを無料で受け取る</a>
           <p class="fine">※特典の内容・提供期間は変更・終了する場合があります。</p>
         </div>
       </div>
