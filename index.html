@@ -66,6 +66,18 @@
     .banner-caption{margin:14px 0 0;color:var(--muted);text-align:center;font-size:.92rem;line-height:1.8}
     .cta-banner{display:block;width:100%;height:auto}
 
+    /* ===== 特典の中身リスト ===== */
+    .gift-section{padding:0 0 56px}
+    .gift-card{position:relative;padding:34px 26px 30px;border:1px solid #d8c9b3;border-radius:22px;background:var(--card);box-shadow:inset 0 0 0 6px var(--card),inset 0 0 0 7px #e3d6c3,0 16px 38px rgba(97,66,50,.1)}
+    .gift-lead{margin:0 0 6px;text-align:center;color:var(--terra);font-size:.85rem;font-weight:700;letter-spacing:.08em}
+    .gift-card h2{margin:0 0 18px;text-align:center;font-size:clamp(1.3rem,5vw,1.6rem)}
+    .gift-items{list-style:none;margin:0;padding:0}
+    .gift-items li{position:relative;padding:13px 0 13px 38px;border-bottom:1px dotted rgba(184,117,86,.55);font-weight:700;line-height:1.6}
+    .gift-items li:last-child{border-bottom:0}
+    .gift-items li:before{content:"✓";position:absolute;left:2px;top:50%;transform:translateY(-50%);width:26px;height:26px;border-radius:50%;background:var(--sage-pale);color:var(--sage-deep);display:grid;place-items:center;font-size:.85rem}
+    .gift-extra{margin:18px 0 0;padding:16px 18px;border-radius:14px;background:var(--terra-pale);text-align:left;font-size:.92rem;line-height:1.8;color:var(--ink)}
+    .gift-extra b{color:var(--terra)}
+
     /* ===== お礼＋自己紹介 ===== */
     .self-intro{position:relative;background:linear-gradient(180deg,rgba(255,255,255,.52),rgba(255,255,255,0))}
     .intro-text{margin:0 auto 1.6em;color:var(--muted);text-align:left;max-width:560px;line-height:2}
@@ -207,10 +219,27 @@
     <section class="banner-section">
       <div class="wrap">
         <a class="cta-banner-link" href="https://sub.aione.co.jp/line/open/QFSiLvkqYbDv?mtid=LjfkfFq0NU0O" target="_blank" rel="noopener noreferrer">
-          <img class="cta-banner" src="./assets/free-gift-banner.png" alt="Claudeにそのまま貼れる 楽天リサーチ指示文セット">
+          <img class="cta-banner" src="./assets/free-gift-banner.webp" alt="AI副業の完全ガイド 5大特典無料プレゼント">
         </a>
-        <p class="banner-caption">LINEで合言葉【楽天】と送ってくださった方に<br>【Claudeにそのまま貼れる<br>楽天リサーチ指示文セット】を<br>プレゼントしています。<br>タップで受け取れます👆</p>
+        <p class="banner-caption">タップで受け取れます👆</p>
         <p class="banner-caption fine">もっとラクにしたい方向けの<br>応用編もご用意しています。</p>
+      </div>
+    </section>
+
+    <!-- ===== 特典の中身リスト ===== -->
+    <section class="gift-section">
+      <div class="wrap">
+        <div class="gift-card">
+          <p class="gift-lead">LINE登録で受け取れる</p>
+          <h2>5大特典を無料プレゼント</h2>
+          <ul class="gift-items">
+            <li>いま一番始めやすいAIマネタイズ手法</li>
+            <li>ChatGPT収益化プロンプト</li>
+            <li>AIマネタイズ神テンプレート</li>
+            <li>マネタイズのための生成AIツール</li>
+            <li>AI×SNSで収益を生むリアル事情</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -282,7 +311,47 @@
           <div class="rule">
             <div><b>お願いの例</b><p>「この3つの商品を、50代女性向けのキッチン雑貨として比べて、いちばんおすすめの1つについて、Threads用の紹介文を書いて」</p></div>
           </div>
-          <p>すぐに使える指示文は、LINE特典の【Claudeにそのまま貼れる 楽天リサーチ指示文セット】にまとめました。</p>
+          <p>すぐに使える指示文を3つ用意しました。<br>【　】で囲んだ部分を書き換えて、そのままClaudeに貼ってください。</p>
+          <div class="prompt">
+            <div class="prompt-head"><b>① 商品を比べる</b><button class="copy" type="button" data-copy="prompt1">コピーする</button></div>
+            <details class="prompt-details">
+              <summary>指示文の内容を見る</summary>
+              <pre id="prompt1">あなたは楽天市場の商品紹介が得意なアドバイザーです。
+下の商品情報を、【ターゲット：例 50代女性】が【使う場面：例 毎日の料理】で使う前提で比べてください。
+・価格、レビュー数、レビュー平均、特徴を表にまとめる
+・おすすめ順に並べて、理由を1〜2文で書く
+・商品情報にないことは推測せず、「不明」と書く
+
+【ここに商品情報を貼る（商品名・価格・レビュー数・特徴・商品URL）】</pre>
+            </details>
+          </div>
+          <div class="prompt">
+            <div class="prompt-head"><b>② Threads用の紹介文</b><button class="copy" type="button" data-copy="prompt2">コピーする</button></div>
+            <details class="prompt-details">
+              <summary>指示文の内容を見る</summary>
+              <pre id="prompt2">下の商品を紹介するThreadsの投稿を、3パターン書いてください。
+・1投稿は200文字以内
+・最初の1行は、押しつけがましくない一言で目を引く
+・商品情報にないことは書かない。効果は断定しない
+・文末に商品URLをそのまま載せ、最後に「#PR」を入れる
+
+【ここに商品情報を貼る】</pre>
+            </details>
+          </div>
+          <div class="prompt">
+            <div class="prompt-head"><b>③ Instagram用の紹介文</b><button class="copy" type="button" data-copy="prompt3">コピーする</button></div>
+            <details class="prompt-details">
+              <summary>指示文の内容を見る</summary>
+              <pre id="prompt3">下の商品を紹介するInstagramのキャプションを書いてください。
+・最初の1行は、読む人の気持ちに寄り添う一言にする
+・全体で300文字くらい
+・商品情報にないことは書かない。効果は断定しない
+・URLは書かず、「リンクはプロフィールから」と書く
+・ハッシュタグは5個まで。最後に「#PR」を入れる
+
+【ここに商品情報を貼る】</pre>
+            </details>
+          </div>
         </article>
 
         <article class="step" data-step="05">
@@ -307,7 +376,7 @@
         <p class="bridge-text">「でも実際にひとりでやるのは難しそう」<br>「何から始めればいいかわからない・・・」</p>
         <p class="bridge-lead">そんな方のために✨</p>
         <a class="cta-banner-link bridge-banner-link" href="https://sub.aione.co.jp/line/open/QFSiLvkqYbDv?mtid=LjfkfFq0NU0O" target="_blank" rel="noopener noreferrer">
-          <img class="cta-banner" src="./assets/free-gift-banner.png" alt="Claudeにそのまま貼れる 楽天リサーチ指示文セット">
+          <img class="cta-banner" src="./assets/free-gift-banner.webp" alt="AI副業の完全ガイド 5大特典無料プレゼント">
         </a>
       </div>
     </section>
@@ -345,7 +414,7 @@ AIを活用して副収入を得られるようになりました。</p>
       <div class="wrap">
         <div class="cta-card">
           <a class="cta-banner-link" href="https://sub.aione.co.jp/line/open/QFSiLvkqYbDv?mtid=LjfkfFq0NU0O" target="_blank" rel="noopener noreferrer">
-            <img class="cta-banner" src="./assets/free-gift-banner.png" alt="Claudeにそのまま貼れる 楽天リサーチ指示文セット">
+            <img class="cta-banner" src="./assets/free-gift-banner.webp" alt="AI副業の完全ガイド 5大特典無料プレゼント">
           </a>
           <p class="banner-caption">タップで受け取れます👆</p>
           <p class="fine">※特典の内容・提供期間は変更・終了する場合があります。</p>
@@ -362,7 +431,7 @@ AIを活用して副収入を得られるようになりました。</p>
     </div>
   </footer>
 
-  <div class="sticky"><a class="button" href="https://sub.aione.co.jp/line/open/QFSiLvkqYbDv?mtid=LjfkfFq0NU0O" target="_blank" rel="noopener noreferrer">楽天リサーチ指示文セットを無料で受け取る</a></div>
+  <div class="sticky"><a class="button" href="https://sub.aione.co.jp/line/open/QFSiLvkqYbDv?mtid=LjfkfFq0NU0O" target="_blank" rel="noopener noreferrer">5大特典を無料で受け取る</a></div>
   <script>
     document.querySelectorAll('[data-copy]').forEach(function(button){
       button.addEventListener('click',function(){
