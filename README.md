@@ -27,7 +27,7 @@ STEPは、`index.html` のコメントにある部品（STEPカード／プロ�
 ## 固定部分（触らなくてOK）
 
 - 上部のプロフィールリンク（Instagram）
-- 特典バナー（`assets/free-gift-banner.png`）※ページ内3箇所（冒頭・締めの一言の直後・最後）
+- 特典バナー（`assets/free-gift-banner.webp`）※ページ内3箇所（冒頭・締めの一言の直後・最後）
 - お礼＋自己紹介（ペルソナ文）
 - 締めの一言のあとのつなぎ文（「でも実際に…」「そんな方のために✨」）
 - 締めのMESSAGE（AIワーク0-1達成スタートブックの案内文・LINEボタン）
@@ -39,5 +39,5 @@ STEPは、`index.html` のコメントにある部品（STEPカード／プロ�
 
 - `index.html` … LP本体
 - `assets/kumi-profile.png` … プロフィール写真
-- `assets/free-gift-banner.png` … 特典バナー（LINEリンクつき）
+- `assets/free-gift-banner.webp` … 特典バナー（LINEリンクつき）
 - `assets/` … このLP専用の画像（STEPの説明画像など）もここに置く
