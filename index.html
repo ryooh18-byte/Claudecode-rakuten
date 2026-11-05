@@ -187,6 +187,10 @@
     p{text-wrap:pretty;line-break:strict}
     h1,h2,h3,.hero-sub,.banner-caption{text-wrap:balance;line-break:strict}
     .hero-sub{margin:18px 0 0;color:var(--muted);font-size:1rem}
+    .hero-label{display:inline-flex;align-items:center;gap:12px;margin:0 0 14px}
+    .hero-label:before{content:"";width:34px;height:1px;background:var(--terra)}
+    .hero-guide{margin:22px 0 0;font-family:var(--serif);font-weight:700;font-size:clamp(1.3rem,4.6vw,1.75rem);line-height:1.5}
+    .hero-guide em{font-style:normal;color:var(--terra);background:linear-gradient(transparent 70%,rgba(200,126,90,.16) 0)}
     .banner-caption{margin:14px 0 0;font-size:.92rem;line-height:1.8}
     .gift-section{padding:0 0 56px}
     .gift-card{position:relative;padding:34px 26px 30px;border:1px solid #d8c9b3;border-radius:22px;background:var(--card);box-shadow:inset 0 0 0 6px var(--card),inset 0 0 0 7px #e3d6c3,0 16px 38px rgba(97,66,50,.1)}
@@ -202,6 +206,7 @@
     .overview p{text-align:left;max-width:560px;margin:0 auto 18px;white-space:normal}
     .step>p+p{margin-top:1.1em}
     .overview .section-head p{text-align:center}
+    .overview .section-head .solve-lead{margin:0 0 6px;font-family:var(--serif);font-weight:700;font-size:1.25rem;color:var(--ink)}
     .prep-cards{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}
     .prep-card{display:flex;flex-direction:column;align-items:center;gap:8px;padding:18px 10px;border:1px solid var(--line);border-radius:16px;background:var(--paper);text-align:center;font-weight:700;font-size:.92rem;line-height:1.5}
     .prep-card svg{width:44px;height:44px}
@@ -222,7 +227,9 @@
         </a>
       </div>
       <div class="hero-title">
-        <h1><span class="nb">楽天アフィリエイト</span><br><em>副業完全ガイド</em></h1>
+        <p class="eyebrow hero-label">AI × THREADS × RAKUTEN</p>
+        <h1><span class="nb">老後のお金が</span><span class="nb">不安な50代へ</span></h1>
+        <p class="hero-guide"><span class="nb">楽天アフィリエイト</span><em class="nb">副業完全ガイド</em></p>
         <p class="hero-sub">商品探しも紹介文も、Claudeに任せる。<br>おうちでできる副業</p>
       </div>
     </div>
@@ -233,7 +240,8 @@
     <section class="self-intro">
       <div class="wrap">
         <p class="intro-text">こんにちは、くみです。<br>50代から、AIを使ったおうち副業に取り組んでいます。</p>
-        <p class="intro-text">楽天アフィリエイトで、いちばん時間がかかるのは<br>「商品探し」と「紹介文づくり」。<br>このガイドでは、そこをClaudeに任せるやり方を、3ステップで紹介します。</p>
+        <p class="intro-text"><span class="nb">楽天アフィリエイトは、</span><span class="nb">商品を選んで、</span><span class="nb">紹介文を書いて、</span><span class="nb">投稿するだけの副業です。</span></p>
+        <p class="intro-text"><span class="nb">初めてだと手が止まりやすいのが、</span><span class="nb">「紹介文づくり」。</span><br><span class="nb">このガイドでは、</span><span class="nb">そこをClaudeに任せるやり方を、</span><span class="nb">3ステップで紹介します。</span></p>
       </div>
     </section>
 
@@ -243,18 +251,19 @@
         <div class="section-head">
           <p class="eyebrow">こんな悩み、ありませんか？</p>
         </div>
-        <p class="intro-text worries">「商品を探すだけで、1日が終わってしまう」<br>「紹介文が書けなくて、投稿が止まってしまう」<br>「何を紹介すればいいのか、わからない」</p>
+        <p class="intro-text worries"><span class="nb">「副業に興味はあるけど、</span><span class="nb">何から始めればいいかわからない」</span><br><span class="nb">「パソコンも文章も苦手。</span><span class="nb">自分にできるか不安」</span><br><span class="nb">「アフィリエイトって、</span><span class="nb">なんだか難しそう」</span></p>
         <div class="section-head">
-          <h2>その面倒な作業、<br><span class="accent">Claudeに任せられます。</span></h2>
+          <p class="solve-lead">大丈夫。</p>
+          <h2><span class="nb">いちばん難しい</span><span class="nb">紹介文づくりは、</span><br><span class="accent"><span class="nb">Claudeが</span><span class="nb">手伝ってくれます。</span></span></h2>
           <p>あなたがやるのは、商品を選んで、貼って、頼むだけ。</p>
         </div>
         <div class="table-wrap">
           <table>
-            <thead><tr><th>これまで</th><th>Claudeに任せると</th></tr></thead>
+            <thead><tr><th>ひとりで始めると</th><th>このやり方なら</th></tr></thead>
             <tbody>
-              <tr><td>商品を1つずつ見比べて、迷い続ける</td><td>候補を貼るだけで、比べて表にしてくれる</td></tr>
-              <tr><td>白紙から紹介文を考えて、何時間も悩む</td><td>頼めば、紹介文の下書きが3パターン出てくる</td></tr>
-              <tr><td>ネタが切れて、投稿が止まる</td><td>商品を変えて頼めば、次の投稿がすぐ作れる</td></tr>
+              <tr><td>紹介文の書き方がわからず、手が止まる</td><td>Claudeに頼めば、紹介文の下書きが3パターン出てくる</td></tr>
+              <tr><td>どの商品を選べばいいか、決められない</td><td>候補を貼れば、Claudeが比べて表にしてくれる</td></tr>
+              <tr><td>規約やルールがわからず、不安</td><td>守るルールも、3ステップの中にまとめてある</td></tr>
             </tbody>
           </table>
         </div>
@@ -366,7 +375,7 @@
         <article class="step" data-step="03">
           <span class="step-label">STEP 3</span>
           <h3>「PR」を入れて、投稿する</h3>
-          <p>紹介リンクを載せる投稿には、広告だとわかるように、投稿の最初に「PR」と入れます。ハッシュタグの中に埋もれさせないこと。</p>
+          <p>紹介リンクを載せる投稿には、広告だとわかるように、投稿の最初に<span class="nb">「PR」と入れます。</span>ハッシュタグの中に埋もれさせないこと。</p>
           <p>Instagramは投稿文のリンクが押せないので、紹介リンクはプロフィールやストーリーズのリンクに入れます。</p>
           <div class="note"><b>やってはいけないこと：</b>ほかの人の投稿へのコメントにリンクを貼る、DMでリンクを送る、同じ文章を何度も投稿する。どれも規約違反とされ、アカウントが使えなくなることがあります。</div>
         </article>
@@ -384,7 +393,7 @@
     <section class="closing-message">
       <div class="wrap">
         <div class="message-card">
-          <p>今回の楽天アフィリエイト副業をきっかけに、<br>AIを使った副収入づくりをもっと知りたい方へ。</p>
+          <p><span class="nb">今回の楽天アフィリエイト副業を</span><span class="nb">きっかけに、</span><br><span class="nb">AIを使った副収入づくりを</span><span class="nb">もっと知りたい方へ。</span></p>
           <span class="message-badge">公式LINE限定・無料</span>
           <h3>AI副業の完全ガイド 5大特典</h3>
           <p>50代からでも、できることは増やせます
