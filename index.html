@@ -187,7 +187,7 @@
     p{text-wrap:pretty;line-break:strict}
     h1,h2,h3,.hero-sub,.banner-caption{text-wrap:balance;line-break:strict}
     .hero-sub{margin:18px 0 0;color:var(--muted);font-size:1rem}
-    .hero-label{display:inline-flex;align-items:center;gap:12px;margin:0 0 14px}
+    .hero-label{display:inline-flex;align-items:center;gap:12px;margin:0 0 14px;text-transform:none;font-size:.9rem}
     .hero-label:before{content:"";width:34px;height:1px;background:var(--terra)}
     .hero-guide{margin:22px 0 0;font-family:var(--serif);font-weight:700;font-size:clamp(1.3rem,4.6vw,1.75rem);line-height:1.5}
     .hero-guide em{font-style:normal;color:var(--terra);background:linear-gradient(transparent 70%,rgba(200,126,90,.16) 0)}
@@ -227,7 +227,7 @@
         </a>
       </div>
       <div class="hero-title">
-        <p class="eyebrow hero-label">AI × THREADS × RAKUTEN</p>
+        <p class="eyebrow hero-label">楽天 × Claude</p>
         <h1><span class="nb">老後のお金が</span><span class="nb">不安な50代へ</span></h1>
         <p class="hero-guide"><span class="nb">楽天アフィリエイト</span><em class="nb">副業完全ガイド</em></p>
         <p class="hero-sub">商品探しも紹介文も、Claudeに任せる。<br>おうちでできる副業</p>
@@ -236,6 +236,16 @@
   </header>
 
   <main>
+    <!-- ===== 特典バナー（1箇所目）【固定】 ===== -->
+    <section class="banner-section">
+      <div class="wrap">
+        <a class="cta-banner-link" href="https://sub.aione.co.jp/line/open/QFSiLvkqYbDv?mtid=LjfkfFq0NU0O" target="_blank" rel="noopener noreferrer">
+          <img class="cta-banner" src="./assets/free-gift-banner.webp" alt="AI副業の完全ガイド 5大特典無料プレゼント">
+        </a>
+        <p class="banner-caption">タップで受け取れます👆</p>
+      </div>
+    </section>
+
     <!-- ===== 2. あいさつ ===== -->
     <section class="self-intro">
       <div class="wrap">
@@ -253,8 +263,7 @@
         </div>
         <p class="intro-text worries"><span class="nb">「副業に興味はあるけど、</span><span class="nb">何から始めればいいかわからない」</span><br><span class="nb">「パソコンも文章も苦手。</span><span class="nb">自分にできるか不安」</span><br><span class="nb">「アフィリエイトって、</span><span class="nb">なんだか難しそう」</span></p>
         <div class="section-head">
-          <p class="solve-lead">大丈夫。</p>
-          <h2><span class="nb">いちばん難しい</span><span class="nb">紹介文づくりは、</span><br><span class="accent"><span class="nb">Claudeが</span><span class="nb">手伝ってくれます。</span></span></h2>
+          <h2><span class="nb">大丈夫。</span><br><span class="nb">いちばん難しい</span><span class="nb">紹介文づくりは、</span><br><span class="accent"><span class="nb">Claudeが</span><span class="nb">手伝ってくれます。</span></span></h2>
           <p>あなたがやるのは、商品を選んで、貼って、頼むだけ。</p>
         </div>
         <div class="table-wrap">
@@ -281,7 +290,7 @@
         <p><b>このガイドでわかること</b></p>
         <ul class="check-list">
           <li>楽天アフィリエイトを始める、登録のしかた</li>
-          <li>Claudeに貼るだけで、紹介文ができる指示文3つ</li>
+          <li>Claudeに貼るだけで、Threadsの紹介文ができる指示文2つ</li>
           <li>規約違反でアカウントを失わないための、投稿のルール</li>
         </ul>
       </div>
@@ -307,8 +316,9 @@
           <p>どちらも、無料で始められます。</p>
           <div class="substep">① 楽天アフィリエイトに登録する</div>
           <p>楽天アフィリエイトのページに、いつもの楽天IDでログインして、利用登録をします。</p>
-          <div class="substep">② 投稿に使うSNSを登録する</div>
-          <p>管理画面の「サイト管理」から、ThreadsやInstagramのアカウントを登録します。これで、紹介リンクを載せる準備は完了です。</p>
+          <div class="substep">② Threadsのアカウントを登録する</div>
+          <p>投稿はThreadsでします。ThreadsはInstagramのアカウントがあれば、そのまま始められます。</p>
+          <p>管理画面の「サイト管理」から、Threadsのアカウントを登録します。これで、紹介リンクを載せる準備は完了です。</p>
         </article>
 
         <article class="step" data-step="02">
@@ -326,7 +336,7 @@
           <div class="rule">
             <div><b>頼み方の例</b><p>「これらの商品を、50代女性向けのキッチン雑貨として比べて、いちばんおすすめの1つについて、Threads用の紹介文を書いて」</p></div>
           </div>
-          <p>すぐに使える指示文を3つ用意しました。<br>【　】の部分を書き換えて、そのまま貼ってください。</p>
+          <p>すぐに使える指示文を2つ用意しました。<br>【　】の部分を書き換えて、そのまま貼ってください。</p>
           <div class="prompt">
             <div class="prompt-head"><b>① 商品を比べる</b><button class="copy" type="button" data-copy="prompt1">コピーする</button></div>
             <details class="prompt-details">
@@ -355,28 +365,13 @@
 【ここに商品情報を貼る】</pre>
             </details>
           </div>
-          <div class="prompt">
-            <div class="prompt-head"><b>③ Instagram用の紹介文</b><button class="copy" type="button" data-copy="prompt3">コピーする</button></div>
-            <details class="prompt-details">
-              <summary>指示文の内容を見る</summary>
-              <pre id="prompt3">下の商品を紹介するInstagramのキャプションを書いてください。
-・最初に「【PR】」を入れ、次の1行は、読む人の気持ちに寄り添う一言にする
-・全体で300文字くらい
-・商品情報にないことは書かない。効果は断定しない
-・価格は変わることがあるので、書くときは「投稿時点」と添える
-・URLは書かず、「リンクはプロフィールから」と書く
-・ハッシュタグは5個まで
-
-【ここに商品情報を貼る】</pre>
-            </details>
-          </div>
         </article>
 
         <article class="step" data-step="03">
           <span class="step-label">STEP 3</span>
-          <h3>「PR」を入れて、投稿する</h3>
+          <h3><span class="nb">「PR」を入れて、</span><span class="nb">Threadsに投稿する</span></h3>
           <p>紹介リンクを載せる投稿には、広告だとわかるように、投稿の最初に<span class="nb">「PR」と入れます。</span>ハッシュタグの中に埋もれさせないこと。</p>
-          <p>Instagramは投稿文のリンクが押せないので、紹介リンクはプロフィールやストーリーズのリンクに入れます。</p>
+          <p>Threadsは、投稿の中に貼った紹介リンクを、そのまま押せます。Claudeが作った紹介文を貼って、投稿するだけです。</p>
           <div class="note"><b>やってはいけないこと：</b>ほかの人の投稿へのコメントにリンクを貼る、DMでリンクを送る、同じ文章を何度も投稿する。どれも規約違反とされ、アカウントが使えなくなることがあります。</div>
         </article>
       </div>
