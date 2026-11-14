@@ -189,7 +189,8 @@
     .hero-sub{margin:18px 0 0;color:var(--muted);font-size:1rem}
     .hero-label{display:inline-flex;align-items:center;gap:12px;margin:0 0 14px;text-transform:none;font-size:.9rem}
     .hero-label:before{content:"";width:34px;height:1px;background:var(--terra)}
-    .hero-guide{margin:22px 0 0;font-family:var(--serif);font-weight:700;font-size:clamp(1.3rem,4.6vw,1.75rem);line-height:1.5}
+    .hero-badge{display:inline-block;margin:22px 0 0;padding:8px 22px;border-radius:999px;background:var(--terra);color:#fff;font-family:var(--serif);font-weight:700;font-size:clamp(1.05rem,4vw,1.3rem);letter-spacing:.04em;box-shadow:0 8px 20px rgba(184,117,86,.25)}
+    .hero-guide{margin:16px 0 0;font-family:var(--serif);font-weight:700;font-size:clamp(1.3rem,4.6vw,1.75rem);line-height:1.5}
     .hero-guide em{font-style:normal;color:var(--terra);background:linear-gradient(transparent 70%,rgba(200,126,90,.16) 0)}
     .banner-caption{margin:14px 0 0;font-size:.92rem;line-height:1.8}
     .gift-section{padding:0 0 56px}
@@ -229,8 +230,9 @@
       <div class="hero-title">
         <p class="eyebrow hero-label">楽天 × Claude</p>
         <h1><span class="nb">老後のお金が</span><span class="nb">不安な50代へ</span></h1>
+        <p class="hero-badge">スマホだけで、全部できる！</p>
         <p class="hero-guide"><span class="nb">楽天アフィリエイト</span><em class="nb">副業完全ガイド</em></p>
-        <p class="hero-sub">商品探しも紹介文も、Claudeに任せる。<br>おうちでできる副業</p>
+        <p class="hero-sub">商品探しも紹介文も、Claudeに任せる。</p>
       </div>
     </div>
   </header>
@@ -313,7 +315,7 @@
             <div class="prep-card"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M10 16h28l-2.5 24h-23z" fill="none" stroke="var(--terra)" stroke-width="2.5" stroke-linejoin="round"/><path d="M17 16v-3a7 7 0 0 1 14 0v3" fill="none" stroke="var(--terra)" stroke-width="2.5" stroke-linecap="round"/></svg><span>楽天会員の<br>アカウント</span><small>ふだんの買い物と同じID</small></div>
             <div class="prep-card"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 12h32v20H22l-8 7v-7H8z" fill="none" stroke="var(--sage-deep)" stroke-width="2.5" stroke-linejoin="round"/><circle cx="17" cy="22" r="2" fill="var(--sage-deep)"/><circle cx="24" cy="22" r="2" fill="var(--sage-deep)"/><circle cx="31" cy="22" r="2" fill="var(--sage-deep)"/></svg><span>Claude</span><small>話しかけて使うAI</small></div>
           </div>
-          <p>どちらも、無料で始められます。</p>
+          <p>どちらも、無料で始められます。<b>スマホだけで、全部できます。</b></p>
           <div class="substep">① 楽天アフィリエイトに登録する</div>
           <p>楽天アフィリエイトのページに、いつもの楽天IDでログインして、利用登録をします。</p>
           <div class="substep">② Threadsのアカウントを登録する</div>
@@ -325,10 +327,22 @@
           <span class="step-label">STEP 2</span>
           <h3>紹介文をつくる</h3>
           <p>ここからが、いちばんラクになるところです。</p>
-          <div class="substep">① 紹介する商品を選ぶ</div>
-          <p>楽天市場で、紹介したい商品を選びます。まずは1週間分、7個くらいが目安です。</p>
+          <div class="substep">① 売れている商品から選ぶ</div>
+          <p>自分で一から探さなくて大丈夫。すでに売れている商品から、1週間分の7個を選びます。</p>
+          <div class="plain-box">
+            <h3>選び方は、この3つ</h3>
+            <ul class="check-list">
+              <li><b>ランキングを見る</b>:楽天市場のランキングで、「女性」や「50代」の売れ筋を見ます。同じ世代に、いま売れている商品が並びます</li>
+              <li><b>ジャンルに迷ったら、食品か日用品</b>:食品は、楽天ROOMで50代がいちばん多く紹介しているジャンルです。日用品は、くり返し買われやすい定番です</li>
+              <li><b>報酬を増やしたいなら、料率アップ商品</b>:楽天アフィリエイトの「商品・サービスを探す」から、いつもより報酬率が高い商品だけを探せます</li>
+            </ul>
+          </div>
+          <div class="rule">
+            <div><b>選ぶのも、Claudeに手伝ってもらえる</b><p>ランキングの商品名をコピーしてClaudeに貼り、「50代の介護職の女性に合いそうな商品を7つ選んで」と頼めば、候補を選んでくれます。</p></div>
+          </div>
           <div class="substep">② あなた専用のリンクを作る</div>
-          <p>楽天アフィリエイトの管理画面でその商品を検索して、「リンク作成」を押せば、あなた専用の紹介リンクのできあがり。</p>
+          <p>楽天市場アプリの商品ページで、「アフィリエイトリンクの取得」を押せば、あなた専用の紹介リンクがコピーされます。</p>
+          <p>パソコンの場合は、楽天アフィリエイトの管理画面でその商品を検索して、「リンク作成」を押します。</p>
           <p>商品名・価格・レビュー数・レビューの点数・特徴と、作った紹介リンクを、メモにコピーしておきます。</p>
           <div class="note"><b>画像の注意：</b>投稿に使う商品の画像は、リンク作成の画面に出てくるものを使います。お店のページの画像を保存して使うのは、禁止とされています。</div>
           <div class="substep">③ Claudeに貼って、頼む</div>
